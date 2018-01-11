@@ -1,0 +1,21 @@
+import sys
+from PyQt5.QtWidgets import QApplication, QListView
+
+
+from CompletorModel import CompletorModel
+
+
+app = QApplication(sys.argv)
+
+list = QListView()
+list.setWindowTitle('Example')
+list.setMinimumSize(600, 400)
+
+model = CompletorModel()
+model.addLinePrediction('a')
+model.addLinePrediction('b')
+
+list.setModel(model)
+list.show()
+app.exec_()
+
