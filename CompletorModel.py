@@ -5,7 +5,7 @@ from PyQt5.QtCore import (
 from PyQt5.QtGui import QStandardItemModel
 from PyQt5.QtCore import QModelIndex
 
-from ItemCompletor import ItemCompletor
+from .ItemCompletor import ItemCompletor
 
 
 class CompletorModel(QStandardItemModel):
